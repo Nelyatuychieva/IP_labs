@@ -4,6 +4,16 @@
     <meta charset="utf-8">
     <title>Туйчиева Неля. Лабораторные работы по курсу "Интернет программирование"</title>
     <link rel="stylesheet" href="main.css">
+    <script>
+        console.log("Всем приветули!!!");
+        console.error("Сщщбщение об ошибке");
+        console.warn("Сообщение-предупреждение");
+        
+        function notReadyAlert() {
+            alert('Sorry, not ready yet!\nИзвините, еще не готово!');
+            return false
+        }
+    </script>
 </head> 
 
 
@@ -16,9 +26,9 @@
     <nav class="main-menu">
         <ul>
             <li><a href=2index.html>| Валюта |</a></li>
-            <li><a href=contacts.html>| Контакты |</a></li>
-            <li><a href=delivery.html>| Динамика |</a></li>
-            <li><a href=promotions.html>| Актуальные предложения| </a></li>
+            <li><a href="contacts.html" onclick="return notReadyAlert()">| Контакты |</a></li>
+            <li><a href="delivery.html" onclick="return notReadyAlert()"></a>| Динамика |</a></li>
+            <li><a href="promotions.html" onclick="return notReadyAlert()"></a>| Актуальные предложения| </a></li>
         </ul>
     <div class="swedarchbox">
 <input type="search" placeholder="Поиск по товарам">
