@@ -26,6 +26,11 @@ function search() {
     }, 2000);
 }
 
+function genereteMenu() {
+    let menu = document.quereSelector('nav main-menu ul');
+    menu.innerHTML = ''
+}
+
 function loaded() {
     let searchbox = document.getElementById('search');
     searchbox.addEventListener('keydown', function (key) {
@@ -33,4 +38,5 @@ function loaded() {
         search();
     });
 
+    genereteMenu();
 }
